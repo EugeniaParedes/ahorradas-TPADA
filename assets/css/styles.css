@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;900&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color:aliceblue;
+}
+header {
+    background-color: #44F0CD;
+    color: #157461;
+}
+.nav-link{
+    color:#157461;
+}
+.nav-link:hover{
+    transition-duration:0.1s;
+    background-color: #49d6ba;
+    color:#157461;
+}
+.box-balance {
+    border-radius: 5px;
+}
+.colour-btn{
+    background-color: #44F0CD;
+    color: #157461;
+    border: 1px solid transparent;
+}
+.colour-btn:hover{
+    transition-duration:0.1s;
+    background-color: #49d6ba;
+    border: #49d6ba;
+    color:#157461;
+}
+.colour-btn:active{
+    transition-duration:0.1s;
+    background-color: #49d6ba;
+    border: #49d6ba;
+    color:#157461;
+}
+.colour-btn:focus{
+    transition-duration:0.1s;
+    background-color: #49d6ba;
+    border: #49d6ba;
+    color:#157461;
+    
+}
+.shadow{
+    box-shadow: -16px 13px 24px -9px rgba(150, 149, 149, 0.75);
+-webkit-box-shadow: -16px 13px 24px -9px rgba(150, 149, 149, 0.75);
+-moz-box-shadow: -16px 13px 24px -9px rgba(150, 149, 149, 0.75);
+background-color: white;
+}
+.bordeColor{
+    border:1px solid #8cbbb1;
+}
+.bordeColor:hover{
+    transition-duration:0.1s;
+    border:1px solid #5a837a;
+}
