@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/430e0fa557.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <title>Categorías</title>
+</head>
+<body>
+
+    <header>
+        <nav class="row container-fluid">
+          <div class="col">
+            <h1> <i class="fas fa-wallet"></i> AhorrADAs </h1>
+          </div>
+          <div class="col nav justify-content-end">
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link estilos" aria-current="page" href="./index.html">
+                  <i class="fas fa-chart-line"></i> Balance</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link estilos" href="./categories.html">
+                  <i class="fas fa-tag"></i> Categorías</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link estilos" href="./report.html">
+                  <i class="fas fa-chart-pie"></i> Reportes</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </header> 
+
+    <main class="container mt-5">
+        <div>
+            <h3>Editar categoría</h3>
+            <p class="mt-5">Nombre</p>
+            <form class="row" id="form-edit-category" action="categories.html">
+                <div class="col-10">
+                  <label for="inputPassword2" class="visually-hidden">pass</label>
+                  <input type="text" name="name" class="form-control" id="edit-cat-name" required>
+                </div>
+                <div class="col-2">
+                  <button type="submit" id="btnEditCategory" class="btn btn-primary mb-3 colour-btn">Editar</button>
+                  <!-- <a href="categories.html" class="btn btn-light me-md-2" type="" id="btn-cancel">Cancelar</a> -->
+                  <button onclick="window.location.href='categories.html'" type="submit" class="btn btn-primary mb-3 colour-btn">Cancelar</button>
+                </div>
+              </form>     
+              <table class="table table-borderless" id="table-categories">
+                <tbody>
+                  
+                </tbody>
+              </table>         
+        </div>
+    </main>
+
+<script src="./assets/js/scripts.js"></script>
+<script src="./assets/js/categories.js"></script>
+<script src="./assets/js/categories-edit.js"></script>
+</body>
+</html>
+
