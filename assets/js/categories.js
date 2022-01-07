@@ -19,15 +19,20 @@ var loadCategoriesTable = function () {
     lstorage.categories.forEach(function (category) {
         var tr = document.createElement('tr');
         var tdCategory = document.createElement('td');
-        var tdEdit = document.createElement('td');
-        var tdDelete = document.createElement('td');
-        var aEdit = document.createElement('a');
-        var aDelete = document.createElement('a');
+        // const tdEdit = document.createElement('td');
+        // const tdDelete = document.createElement('td');
+        // const aEdit = document.createElement('a');
+        // const aDelete = document.createElement('a');
+        var tdEdit = document.createElement('a');
+        var tdDelete = document.createElement('a');
         tdCategory.appendChild(document.createTextNode(category.name));
         tdEdit.appendChild(document.createTextNode('Editar'));
         tdDelete.appendChild(document.createTextNode('Eliminar'));
-        aEdit.appendChild(tdEdit);
-        aDelete.appendChild(tdDelete);
+        // aEdit.appendChild(tdEdit);
+        // aDelete.appendChild(tdDelete);
+        tdEdit.setAttribute('onclick', "location.href=\"./categories-edit.html?id=" + category.id + "\"");
+        tdDelete.dataset.id = category.id;
+        tdDelete.setAttribute("class", "tdDelete");
         tr.appendChild(tdCategory);
         tr.appendChild(tdEdit);
         tr.appendChild(tdDelete);
